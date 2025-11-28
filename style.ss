@@ -4,6 +4,7 @@ body {
   text-align: center;
   padding-top: 50px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .card {
@@ -16,9 +17,7 @@ body {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 
-h1 {
-  color: #ff4d6d;
-}
+h1 { color: #ff4d6d; }
 
 .message {
   font-size: 15px;
@@ -35,10 +34,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background: #ff1e4d;
-}
-
 .popup {
   display: none;
   background: white;
@@ -49,6 +44,29 @@ button:hover {
   margin: auto;
   width: 80%;
   max-width: 300px;
-  height: fit-content;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
 }
