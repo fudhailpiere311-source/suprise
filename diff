@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday My Yayang ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>🎂 Happy Birthday My Yayang ❤️</h1>
+  <h2 id="name">[Nur Fatin Amisya]</h2>
+
+  <p class="message">
+    Dear [Nur Fatin Amisya],<br><br>
+    Happy Birthday! Thank you for being the most beautiful part of my life.
+    I wish you happiness, success and endless love.
+    I’m always proud of you 💖
+    <br><br>
+    Love always,<br>
+    [Fudhail]
+  </p>
+
+  <h3 id="countdown"></h3>
+
+  <button onclick="showSurprise()">🎁 Click for Surprise</button>
+</div>
+
+<div id="popup" class="popup">
+  <h2>💝 Surprise! 💝</h2>
+  <p>You are the best thing that ever happened to me 🥰</p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
