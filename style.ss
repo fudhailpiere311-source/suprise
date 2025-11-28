@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding-top: 50px;
+  margin: 0;
 }
 
 .card {
@@ -10,9 +11,18 @@ body {
   padding: 30px;
   border-radius: 20px;
   width: 90%;
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  color: #ff4d6d;
+}
+
+.message {
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 button {
@@ -25,15 +35,20 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #ff1e4d;
+}
+
 .popup {
   display: none;
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
   position: fixed;
   inset: 0;
   margin: auto;
   width: 80%;
   max-width: 300px;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  height: fit-content;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
 }
